@@ -1,30 +1,135 @@
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/menu-right-alt.css');
 
-.backgroundimg {
-    background-image: url("pexels-alexander-grey-3713892.jpg");
-    background-repeat: no-repeat;
-    background-position: left top;
-    background-size: 100% 100%;
-    flex: 1;
-    height: 100%;
+body {
+    margin:0;
+    font-family: 'Noto Serif Display', serif;
 }
 
-.profile {
-    size: 400px;
+.vc-container{
+	display:flex;
+}
+
+.firstblock {
+    background-color: rgb(125, 130, 184);
+	height: auto;
+	width: 25vw;
+	padding: 30px;
+	box-sizing: border-box;
+	color: white;
+}
+
+.flex-column-between {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.middleblock {
+    height: 100vh;
+    width: 30vw;
+}
+
+.middleblock img {
+	height: 80%;
+}
+
+.lastblock{
+	width: 45vw;
+	height:100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 10vh;
+	box-sizing: border-box;
+	text-align: justify;
+}
+
+.menu {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.menu i {
+	font-size: 50px;
+}
+
+.content span {
+	color:rgb(125, 130, 184)
 }
 
 .logo {
     width: 300px;
-
 }
 
-body {
-    margin: 0;
-    font-family: 'Noto Serif Display', serif;
-    background: linear-gradient(-76deg, rgb(229, 195, 209), rgb(125, 130, 184));
 
-    
+.b1{
+	color: white;
+	background-color:rgb(125, 130, 184);
+	padding: 15px 20px;
+	border-radius: 55px;
+	border: none;
+	margin-right: 20px;
 }
 
-.profile {
-    width: 500px;
+.b2{
+	color: black;
+	padding: 15px 20px;
+	background-color:white;
+	border-radius: 55px;
+	border: 2px solid black;
+}
+
+.purplethingy {
+	background-color:rgb(125, 130, 184);
+	height: 10%;
+	width: 40%;
+}
+
+.icons i {
+	margin-right: 20px;
+}
+
+@media screen and (max-width:768px)
+{
+	.vc-container {
+		background: -webkit-linear-gradient(1deg, rgb(125, 130, 184), rgb(238, 238, 238));
+		background: linear-gradient(1deg, rgb(125, 130, 184), rgb(238, 238, 238));
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: center;
+
+	}
+
+	.firstblock {
+			height: auto;
+			width: 60%;
+			padding: 30px;
+			box-sizing: border-box;
+			color: white;
+		}
+	
+	.middleblock {
+		display: flex;
+    	height: auto;
+    	width: auto;
+    	justify-content: center;
+	}
+
+	.lastblock {
+		width: auto;
+		height: auto;
+		display: block;
+		padding: 30px;
+	}
+
+	.middleblock img {
+		
+		text-align: center;
+		width: 80vw;
+		height: auto;
+		border-radius: 30px;	
+}
+.logo {
+	width: 250px;
+}
 }
