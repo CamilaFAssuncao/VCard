@@ -10,12 +10,14 @@ body {
 }
 
 .firstblock {
-    background-color: rgb(125, 130, 184);
-	height: auto;
-	width: 25vw;
+    /* background: -webkit-linear-gradient(1deg, rgb(125, 130, 184), rgb(238, 238, 238));
+	background: linear-gradient(1deg, rgb(125, 130, 184), rgb(238, 238, 238));
+	height: auto; */
+	width: 30vw;
 	padding: 30px;
 	box-sizing: border-box;
 	color: white;
+	font-size: 22px;
 }
 
 .flex-column-between {
@@ -27,21 +29,31 @@ body {
 .middleblock {
     height: 100vh;
     width: 30vw;
+	padding-left: 5vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+	
 }
 
 .middleblock img {
-	height: 80%;
+    border-radius: 500px;
+	width: auto;
 }
 
 .lastblock{
-	width: 45vw;
+	width: 40vw;
 	height:100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	padding: 10vh;
+	padding: 5vh;
 	box-sizing: border-box;
 	text-align: justify;
+	color: #593d5c;
+	font-size: 22px;
 }
 
 .menu {
@@ -79,20 +91,23 @@ body {
 	border: 2px solid black;
 }
 
-.purplethingy {
+/* .purplethingy {
 	background-color:rgb(125, 130, 184);
 	height: 10%;
-	width: 40%;
-}
+	width: 40%; */
+
 
 .icons i {
 	margin-right: 20px;
+}
+a{
+	color: white;	
 }
 
 @media screen and (max-width:768px)
 {
 	.vc-container {
-		background: -webkit-linear-gradient(1deg, rgb(125, 130, 184), rgb(238, 238, 238));
+		background: -webkit-linear-gradient(1deg, #7d82b8, rgb(238, 238, 238));
 		background: linear-gradient(1deg, rgb(125, 130, 184), rgb(238, 238, 238));
 		display: flex;
 		flex-direction: column-reverse;
@@ -110,9 +125,15 @@ body {
 	
 	.middleblock {
 		display: flex;
+    height: auto;
+    width: 100vw;
+    justify-content: center;
+	flex-direction: row;
+	padding-left:0 ;
+		/* display: flex;
     	height: auto;
-    	width: auto;
-    	justify-content: center;
+    	width: 35vw;
+    	justify-content: center; */
 	}
 
 	.lastblock {
@@ -125,11 +146,31 @@ body {
 	.middleblock img {
 		
 		text-align: center;
-		width: 80vw;
+		width: 70vw;
 		height: auto;
 		border-radius: 30px;	
 }
 .logo {
 	width: 250px;
+	display: none;
+	/* visibility: hidden; */
 }
+
+/* .logo1 {
+	width: 250px;
+} */
 }
+
+@media screen and (min-width: 769px) {
+	.vc-container {
+		display: flex;
+	}
+	.firstblock {
+		background: -webkit-linear-gradient(1deg, rgb(125, 130, 184), rgb(238, 238, 238));
+		background: linear-gradient(1deg, rgb(125, 130, 184), rgb(238, 238, 238));
+	}
+
+	.logo1 {
+		display: none;
+	}
+} 
